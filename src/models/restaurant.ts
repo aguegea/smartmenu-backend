@@ -1,6 +1,6 @@
 import { Schema, model } from "mongoose";
-import ProductSchema from "./product";
-import OrderSchema from "./order";
+import {ProductSchema} from "./product";
+import {OrderSchema} from "./order";
 
 const RestaurantSchema = new Schema({
     name: String,

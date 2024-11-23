@@ -1,9 +1,12 @@
 import { Schema } from "mongoose";
-import ProductSchema from "./product";
 
-const OrderSchema = new Schema({
-    products: [ProductSchema], 
+const ProductSchemaOrder = new Schema ({
+    name: String,
+    price: Number,
+    quantity: Number,
+});
+
+export const OrderSchema = new Schema({
+    products: [ProductSchemaOrder], 
     total: Number,
-})
-
-export default OrderSchema;
+});
