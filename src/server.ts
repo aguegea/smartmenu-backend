@@ -24,9 +24,9 @@ class Server {
     async connectDatabase() {
         try {
             await dbConncetion();
-            console.log('Base de datos conectada');
+            console.log('Connected to database.');
         } catch (error) {
-            console.error('Error al conectar con la base de datos:', error);
+            console.error('Error while connecting to database:', error);
         }
     }
 
@@ -46,10 +46,10 @@ class Server {
         try {
             await this.connectDatabase(); // Espera a la conexión de la base de datos
             this.app.listen(this.port, () => {
-                console.log(`Servidor corriendo en http://localhost:${this.port}`);
+                console.log(`Server running at http://localhost:${this.port}`);
             });
         } catch (error) {
-            console.error('No se pudo iniciar el servidor:', error);
+            console.error('Cannot initialize server:', error);
         }
     }
 }
