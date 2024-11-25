@@ -1,12 +1,12 @@
 import { Schema } from "mongoose";
 
-const ProductSchemaOrder = new Schema ({
+const ProductSchemaOrder = new Schema({
     name: String,
     price: Number,
     quantity: Number,
 });
 
 export const OrderSchema = new Schema({
-    products: [ProductSchemaOrder], 
+    products: [ProductSchemaOrder],
     total: Number,
 });
