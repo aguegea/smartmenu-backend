@@ -28,6 +28,7 @@ Antes de comenzar, asegúrate de tener instalado:
 
     El proyecto viene con un archivo .env el cual tiene la URL para conectarse a la base de datos en MongoDB Atlas (usuario creado especificamente para este proyecto, sin acceso a otros servicios). Si quieres modificar el puerto en el cual se ejecute el backend también puedes modificarlo desde el archivo .env
 
+# Ejecución del proyecto
 - Construir el proyecto
 ```
    > npm run build
