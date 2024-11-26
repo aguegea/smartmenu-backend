@@ -123,7 +123,7 @@ export const postOrderByRestaurantId = async (req: Request, res: Response): Prom
         const updatedRestaurant = await Restaurant.findByIdAndUpdate(
             id,
             { $push: { orders: newOrder } },
-            { new: true },
+            { new: true }, // Devuelve el documento ACTUALIZADO
         );
 
         if (!updatedRestaurant) {
